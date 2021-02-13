@@ -1,0 +1,153 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    --gradient: linear-gradient(0deg,#eee, #bbbbf8 );
+    
+
+    --shadow: 0 0 10px rgba(0,0,139);    
+    --main-background: #eee;
+    --second-background: #fff;
+    --text: #00008b;
+    --icon:#323232;
+    --iconHover: darkblue;
+    --liHover: rgba(0, 0, 139, 0.082);
+}
+
+#theme-options-wrapper{
+    display: flex;
+    justify-content: center;
+}
+.theme-dot{
+    height: 30px;
+    width: 30px;
+    background-color: #000;
+    border-radius: 50%;
+    margin: 5px;
+    border: 2px solid var(--themeDotBoarder);
+    -webkit-box-shadow: -1px 1px 4px -1px rgba(0,0,0,0.75);
+    -moz-box-shadow: -1px 1px 4px -1px rgba(0,0,0,0.75);
+    box-shadow: -1px 1px 4px -1px rgba(0,0,139);
+    cursor: pointer;
+}
+.theme-dot:hover{
+    border-width: 5px;
+}
+#light-mode{
+    background-color: #fff;
+}
+#dark-mode{
+    background-color: darkblue;
+}
+
+#settings-note{
+    font-size: 12px;
+    font-style: italic;
+    text-align: center;
+}
+
+
+body{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--gradient);
+}
+header{
+    position: absolute;
+    top: 20vh
+}
+footer{
+    position: absolute;
+    bottom: 0;
+    padding: 2px;
+    margin: 2px;
+    color: var(--text);
+}
+.container{
+    position: relative;
+    height: 80px;
+    line-height: 80px;
+    width: 95vw;
+    background: var(--second-background);
+    box-shadow: var(--shadow);
+}
+.container ol{
+    display: flex;
+    list-style: none;
+}
+
+.container ol li {
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    
+}
+.container ol li:hover{
+    
+    background: var(--liHover);
+}
+
+.container ol li:hover i{
+    color: var(--iconHover);
+}
+
+.container ol li i{
+    font-size: 35px;
+    color: var(--icon);
+}
+
+.container ol li i:hover{
+    color: var(--iconHover);
+    transform: scale(1.5);
+    cursor: pointer;
+}
+
+.container .slider{
+    position: absolute;
+    height: 7px;
+    width: 20%;
+    background: var(--iconHover);
+    bottom: 0;
+    transition: all 0.3s ease;
+    pointer-events: none;
+}
+
+.container ol li:nth-child(2):hover ~.slider{
+    margin-left: 20%;
+}
+.container ol li:nth-child(3):hover ~.slider{
+    margin-left: 40%;
+}
+.container ol li:nth-child(4):hover ~.slider{
+    margin-left: 60%;
+}
+.container ol li:nth-child(5):hover ~.slider{
+    margin-left: 80%;
+}
+.container ol li:nth-child(6):hover ~.slider{
+    margin-left: 100%;
+}
+
+.container ol .fa-home{
+    color: var(--iconHover);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

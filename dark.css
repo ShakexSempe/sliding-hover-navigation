@@ -1,0 +1,13 @@
+:root {
+    --gradient: linear-gradient(0deg,rgb(31, 31, 248), #020253 );
+    
+
+    --head-foot: #fff;    
+    --main-background: #000;
+    --second-background: rgb(17, 17, 17);
+    --shadow: 0 0 10px #f4f4f4;
+    --text: #fff;
+    --icon:#f4f4f4;
+    --iconHover: #0073ff;
+    --liHover: #dce0e609;
+}
